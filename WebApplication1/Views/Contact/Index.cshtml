@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_NewLayout.cshtml";
+}
+<div class="container">
+    <h4> THE Name IS:@ViewBag.username</h4>
+    <h4>THE Phone NUMBER :@ViewBag.phone</h4>
+    <h4>THE Contactmethod:@ViewBag.contactmethod </h4>
+    <h4>THE country:@ViewBag.country</h4>
+    <h4>
+        MY interests:@foreach (string interst in ViewBag.interests)
+
+        {<div>@interst</div>
+
+
+         }
+    </h4>
+</div>
+
